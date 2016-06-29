@@ -170,7 +170,7 @@ extension SKClipView: UIGestureRecognizerDelegate{
                 dragPosition = .RightEdge
             }
             else if CGRectContainsPoint(clipBox.lowerEdge.bounds, firstTouch.locationInView(clipBox.lowerEdge)) {
-                dragPosition = .UpperEdge
+                dragPosition = .LowerEdge
             }
             else if CGRectContainsPoint(clipBox.leftEdge.bounds, firstTouch.locationInView(clipBox.leftEdge)) {
                 dragPosition = .LeftEdge
