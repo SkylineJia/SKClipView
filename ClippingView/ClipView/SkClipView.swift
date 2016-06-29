@@ -13,9 +13,9 @@ import UIKit
 // 裁剪框＋半透明背景＋手势
 class SKClipView: UIView {
     
-    // 裁剪框
+    /// 裁剪框
     let clipBox = SKClipBox()
-    // 裁剪框frame
+    /// 裁剪框frame
     var boxFrame = CGRectZero {
         didSet {
             // 保留小数点一位
@@ -31,11 +31,13 @@ class SKClipView: UIView {
             boxFrameDidChange?(boxFrame)
         }
     }
-    // 背景颜色
+    /// 背景颜色
     var screenColor = UIColor.blackColor()
-    // 背景透明度
+    /// 背景透明度
     var screenAlpha: CGFloat = 0.5
+    /// 裁剪框最小高度
     let clipMinimizeHeight: CGFloat = 60
+    /// 裁剪框最小宽度
     let clipMinimizeWidth: CGFloat = 60
     
     var boxFrameDidChange: ((CGRect)->())?
