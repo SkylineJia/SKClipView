@@ -39,6 +39,7 @@ class ClippingViewDemo: UIViewController {
             make.left.equalTo(30)
             make.bottom.equalTo(-60)
         }
+        frameLabel.textColor = UIColor.whiteColor()
         clipView.boxFrameDidChange = {
             boxFrame in
             frameLabel.text = "\(boxFrame)"
