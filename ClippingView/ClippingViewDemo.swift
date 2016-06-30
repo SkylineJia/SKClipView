@@ -44,7 +44,6 @@ class ClippingViewDemo: UIViewController {
             boxFrame in
             frameLabel.text = "\(boxFrame)"
         }
-        
     }
     
     
