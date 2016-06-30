@@ -17,7 +17,7 @@
 		2D3465321D1005A000047698 /* ClippingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3465311D1005A000047698 /* ClippingViewTests.swift */; };
 		2D34653D1D1005A000047698 /* ClippingViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D34653C1D1005A000047698 /* ClippingViewUITests.swift */; };
 		2D3735D01D23D43D008F17C6 /* SKClipBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3735CE1D23D43D008F17C6 /* SKClipBox.swift */; };
-		2D3735D11D23D43D008F17C6 /* SkClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3735CF1D23D43D008F17C6 /* SkClipView.swift */; };
+		2D3735D11D23D43D008F17C6 /* SKClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3735CF1D23D43D008F17C6 /* SKClipView.swift */; };
 		EC53EED63CCB69E008E4602D /* Pods_ClippingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216EB9E14C6BD964EA24474F /* Pods_ClippingView.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,7 @@
 		2D34653C1D1005A000047698 /* ClippingViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippingViewUITests.swift; sourceTree = "<group>"; };
 		2D34653E1D1005A000047698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D3735CE1D23D43D008F17C6 /* SKClipBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKClipBox.swift; path = ClipView/SKClipBox.swift; sourceTree = "<group>"; };
-		2D3735CF1D23D43D008F17C6 /* SkClipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkClipView.swift; path = ClipView/SkClipView.swift; sourceTree = "<group>"; };
+		2D3735CF1D23D43D008F17C6 /* SKClipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKClipView.swift; path = ClipView/SKClipView.swift; sourceTree = "<group>"; };
 		46CA2E4FADFE34F3B54C56E2 /* Pods-ClippingViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClippingViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClippingViewTests/Pods-ClippingViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		5F1A4D1C613909194618F6C1 /* Pods-ClippingViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClippingViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClippingViewTests/Pods-ClippingViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F9223187FA625EE37318C21 /* Pods-ClippingViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClippingViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClippingViewUITests/Pods-ClippingViewUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				2D3735CE1D23D43D008F17C6 /* SKClipBox.swift */,
-				2D3735CF1D23D43D008F17C6 /* SkClipView.swift */,
+				2D3735CF1D23D43D008F17C6 /* SKClipView.swift */,
 			);
 			name = ClipView;
 			sourceTree = "<group>";
@@ -442,7 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D3735D01D23D43D008F17C6 /* SKClipBox.swift in Sources */,
-				2D3735D11D23D43D008F17C6 /* SkClipView.swift in Sources */,
+				2D3735D11D23D43D008F17C6 /* SKClipView.swift in Sources */,
 				2D34651F1D1005A000047698 /* ClippingViewDemo.swift in Sources */,
 				2D34651D1D1005A000047698 /* AppDelegate.swift in Sources */,
 			);

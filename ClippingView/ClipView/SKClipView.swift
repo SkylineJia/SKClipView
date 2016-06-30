@@ -32,9 +32,17 @@ class SKClipView: UIView {
         }
     }
     /// 背景颜色
-    var screenColor = UIColor.blackColor()
+    var screenColor = UIColor.blackColor() {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
     /// 背景透明度
-    var screenAlpha: CGFloat = 0.5
+    var screenAlpha: CGFloat = 0.5 {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
     /// 裁剪框最小高度
     let clipMinimizeHeight: CGFloat = 60
     /// 裁剪框最小宽度
