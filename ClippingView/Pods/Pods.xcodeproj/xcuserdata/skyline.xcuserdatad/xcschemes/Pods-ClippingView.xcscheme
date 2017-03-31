@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AB6E1F83BB708D035943922FA337140"
+               BlueprintIdentifier = "1593B2D6AB1475B6F052EFCF1DF97AF5"
                BuildableName = "Pods_ClippingView.framework"
                BlueprintName = "Pods-ClippingView"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9AB6E1F83BB708D035943922FA337140"
+            BlueprintIdentifier = "1593B2D6AB1475B6F052EFCF1DF97AF5"
             BuildableName = "Pods_ClippingView.framework"
             BlueprintName = "Pods-ClippingView"
             ReferencedContainer = "container:Pods.xcodeproj">

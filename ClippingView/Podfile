@@ -4,7 +4,7 @@
 target 'ClippingView' do
   use_frameworks!
 
-  pod 'SnapKit', :git => 'https://github.com/SnapKit/SnapKit.git'
+  pod 'SnapKit', '~> 3.2'
 
 
 

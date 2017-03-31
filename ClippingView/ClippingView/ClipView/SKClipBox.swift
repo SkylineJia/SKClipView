@@ -86,7 +86,7 @@ class SKClipBox: UIView {
             make.centerY.equalToSuperview()
         }
         
-        leftEdge.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2))
+        leftEdge.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi/2))
         
         rightEdge = BoxEdgeView()
         self.addSubview(rightEdge)
@@ -94,7 +94,7 @@ class SKClipBox: UIView {
             make.centerX.equalTo(self.snp.right)
             make.centerY.equalToSuperview()
         }
-        rightEdge.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2))
+        rightEdge.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi/2))
         
         
         upperLeftCorner = BoxCornerView()
@@ -110,7 +110,7 @@ class SKClipBox: UIView {
             make.centerX.equalTo(self.snp.right)
             make.centerY.equalTo(self.snp.top)
         }
-        upperRightCorner.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2))
+        upperRightCorner.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi/2))
         
         lowerLeftCorner = BoxCornerView()
         self.addSubview(lowerLeftCorner)
@@ -118,7 +118,7 @@ class SKClipBox: UIView {
             make.centerX.equalTo(self.snp.left)
             make.centerY.equalTo(self.snp.bottom)
         }
-        lowerLeftCorner.transform = CGAffineTransform(rotationAngle: -CGFloat(M_PI_2))
+        lowerLeftCorner.transform = CGAffineTransform(rotationAngle: -CGFloat(Double.pi/2))
         
         lowerRightCorner = BoxCornerView()
         self.addSubview(lowerRightCorner)
@@ -126,7 +126,7 @@ class SKClipBox: UIView {
             make.centerX.equalTo(self.snp.right)
             make.centerY.equalTo(self.snp.bottom)
         }
-        lowerRightCorner.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
+        lowerRightCorner.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
     }
     
     required init?(coder aDecoder: NSCoder) {

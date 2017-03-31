@@ -28,39 +28,41 @@
 #endif
 
 
-public protocol ConstraintRelatableTarget {
-}
-
-extension Int: ConstraintRelatableTarget {
-}
-
-extension UInt: ConstraintRelatableTarget {
-}
-
-extension Float: ConstraintRelatableTarget {
-}
-
-extension Double: ConstraintRelatableTarget {
-}
-
-extension CGFloat: ConstraintRelatableTarget {
-}
-
-extension CGSize: ConstraintRelatableTarget {
-}
-
-extension CGPoint: ConstraintRelatableTarget {
-}
-
-extension ConstraintInsets: ConstraintRelatableTarget {
-}
-
-extension ConstraintItem: ConstraintRelatableTarget {
-}
-
-extension ConstraintView: ConstraintRelatableTarget {
-}
-
-@available(iOS 9.0, OSX 10.11, *)
-extension ConstraintLayoutGuide: ConstraintRelatableTarget {
+public struct ConstraintPriority : ExpressibleByFloatLiteral, Equatable {
+    public typealias FloatLiteralType = Float
+    
+    public let value: Float
+    
+    public init(floatLiteral value: Float) {
+        self.value = value
+    }
+    
+    public init(_ value: Float) {
+        self.value = value
+    }
+    
+    public static var required: ConstraintPriority {
+        return 1000.0
+    }
+    
+    public static var high: ConstraintPriority {
+        return 750.0
+    }
+    
+    public static var medium: ConstraintPriority {
+        #if os(OSX)
+            return 501.0
+        #else
+            return 500.0
+        #endif
+        
+    }
+    
+    public static var low: ConstraintPriority {
+        return 250.0
+    }
+    
+    public static func ==(lhs: ConstraintPriority, rhs: ConstraintPriority) -> Bool {
+        return lhs.value == rhs.value
+    }
 }
